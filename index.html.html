@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUIZ_APP|MAJOR-ASSIGNMENT</title>
+    <link rel="stylesheet" href="style.css" /> <!--linking of css file-->
+  </head>
+  <body> <!--index -->
+        <div style="height: 2px; margin-left: 590px; margin-top: 5px">
+          <img src="testbook-logo.png" alt="no img" /> <!--image tag usage -->
+        </div>
+        <h1 id="greet">Hello user!</h1>
+          <label
+            style="         
+              margin-left: 500px;
+              font-size: 25px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bolder; 
+            " 
+            for="user-input"
+          >
+            Enter your name to continue the Quiz
+          </label> <!--inline styling-->
+          <input
+            type="text"
+            size="65"
+            placeholder="ENTER YOUR NAME"
+            id="user-input"
+            autocomplete="off"
+            required
+          /> <!--input tag and its attributes--> 
+          <button id="enter" onclick="enterclick()"  type="submit"> 
+            ENTER 
+          </button>
+        <div id="notify"></div>
+          <div  id="index1"> <!--block level element-->
+            <h1 id="category">Select category</h1>
+            <span id="res"></span> <!--inline element-->
+            
+            <div id="form1">
+              <button class="btn-1" id="1btn" onclick="btn1click()">
+                pipes and cisterns
+              </button> <!--button and event listener usage-->
+              <button class="btn-1" id="2btn" onclick="btn2click()">
+                probability
+              </button><!--button and event listener usage-->
+              <button class="btn-1" id="3btn" onclick="btn3click()">
+                problems on ages
+              </button> <!--button and event listener usage-->
+              <button class="btn-1" id="4btn" onclick="btn4click()">
+                profit and loss
+              </button> <!--button and event listener usage-->
+            </div>
+          </div>
+      <script src="script.js"></script><!--linking of javascript file-->
+    </section>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PROBLEM ON AGES</title>
+  </head>
+  <body>
+    <!--PROBLEM ON AGES HTML FILE-->
+    <div id="start-box">
+      <button id="start-btn" onclick="nxt2()">Start Quiz</button>
+      <div id="clickhere">
+        Click here to start quiz <span id="emoji">👇</span>
+      </div>
+      <h2 id="other">OTHER CATEGORIES</h2>
+      <button
+        class="start-other-btns"
+        style="position: absolute; top: 305px; left: 175px"
+        id="2btn"
+        onclick="navigatepb()"
+      >
+        probability</button
+      ><!--button and event listener usage-->
+      <button
+        class="start-other-btns"
+        style="position: absolute; top: 355px; left: 175px"
+        id="1btn"
+        onclick="navigatepc()"
+      >
+        pipes and cisterns
+      </button>
+      <!--button and event listener usage-->
+      <button
+        class="start-other-btns"
+        style="position: absolute; top: 405px; left: 175px"
+        id="4btn"
+        onclick="navigatepl()"
+      >
+        profit and loss
+      </button>
+      <!--button and event listener usage-->
+    </div>
+    <section id="sec">
+      <!--USAGE OF CLASS SELECTOR-->
+      <h2 id="head1">Problems on ages</h2>
+      <div style="display: flex; position: absolute; left: 100px; top: 60px">
+        <div style="color: #059ac4; font-weight: bold; font-size: 21px">
+          TIME:
+        </div>
+        <div id="timer">100</div>
+      </div>
+      <div id="scr">
+        score:
+        <div id="scr-num">0</div>
+      </div>
+      <div id="qnum">1/10</div>
+      <div id="question"></div>
+      <div id="form2">
+        <!--EVENT LISTENER USAGE-->
+        <button
+          id="opt11"
+          class="btn2"
+          style="cursor: pointer"
+          onclick="btnclicked1()"
+        ></button>
+        <button
+          id="opt12"
+          class="btn2"
+          style="cursor: pointer"
+          onclick="btnclicked2()"
+        ></button>
+        <button
+          id="opt13"
+          class="btn2"
+          style="cursor: pointer"
+          onclick="btnclicked3()"
+        ></button>
+        <button
+          id="opt14"
+          class="btn2"
+          style="cursor: pointer"
+          onclick="btnclicked4()"
+        ></button>
+      </div>
+      <!--EVENT LISTENER USAGE-->
+      <button id="btn21" onclick="nxt2()">Next Question</button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
